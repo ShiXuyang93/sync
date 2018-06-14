@@ -1,0 +1,9 @@
+JS：
+$(".scroll").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 400);
+});
+
+html：
+<a class="scroll" href="#codeword">Blue Words</a>
+<div id="codeword"></div>
